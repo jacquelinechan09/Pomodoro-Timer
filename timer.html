@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+  <div class="container">
+    <strong><h1 class="title">Pomodoro Timer</h1></strong>
+    <div class="timer">
+      <span id="minutes">25</span>:<span id="seconds">00</span>
+    </div>
+    <div class="progress">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+    <br> <br>
+    <div>
+      <label for="study-duration">Study Duration (minutes):</label>
+      <input type="number" id="study-duration" min="1" value="25">
+    </div>
+
+    <br><br>
+    <div class="controls">
+      <button id="start">Begin</button>
+      <button id="pause">Reset</button>
+    </div>
+    <button class="nice-button" id="toggle-mode">🌙 Dark / Light Mode</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
